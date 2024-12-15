@@ -1,3 +1,3 @@
-This is a template for a simple TODO application created using React + Vite + TypeScript + TailwindCSS.
+Это шаблон для простого приложения TODO, созданного с использованием React + Vite + TypeScript + TailwindCSS.
 
-Supports changing the color theme, deleting selected todos, saving todo and color theme in localStorage.
+Поддерживает изменение цветовой схемы, удаление выбранных задач, сохранение задач и цветовой темы в localStorage.
