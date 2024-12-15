@@ -6,7 +6,7 @@ interface FormProps {
 
 const Form = (props: FormProps) => {
   const [value, setValue] = useState("");
-  const [isDark, setIsDark] = useState(false);
+  const [_isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -41,7 +41,7 @@ const Form = (props: FormProps) => {
                spellCheck="false" 
                autoComplete="off" 
                placeholder="Input your note..." 
-               className="dark:border-white dark:bg-[#252525] dark:placeholder:text-[#666666] dark:text-white font-['Inter'] caret-[#6C63FF] text-[#6C63FF] font-medium w-full h-10 border-2 border-[#6C63FF] rounded-md p-2 placeholder:text-[#C3C1E5] placeholder:font-medium placeholder:font-['Inter'] focus:outline-4 focus:outline-[#6C63FF40]"/>
+               className="dark:border-white dark:bg-[#252525] dark:placeholder:text-[#666666] dark:text-white font-['Inter'] caret-[#6C63FF] text-black font-medium w-full h-10 border-2 border-[#6C63FF] rounded-md p-2 placeholder:text-[#C3C1E5] placeholder:font-medium placeholder:font-['Inter'] focus:outline-4 focus:outline-[#6C63FF40]"/>
 
         <button type="submit" className="button uppercase bg-[#6C63FF] rounded-md p-2 text-white font-medium">
           Add

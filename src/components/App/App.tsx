@@ -51,33 +51,6 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id));
   }
 
-  const saveTodos = (todos: Todo[]) => {
-    try {
-      localStorage.setItem('todos', JSON.stringify(todos));
-    } catch (error) {
-      console.error('Error saving todos:', error);
-    }
-  };
-
-  const loadTodos = (): Todo[] => {
-    try {
-      const savedTodos = localStorage.getItem('todos');
-      return savedTodos ? JSON.parse(savedTodos) : [];
-    } catch (error) {
-      console.error('Error loading todos:', error);
-      return [];
-    }
-  };
-
-  const isValidTodo = (todo: any): todo is Todo => {
-    return (
-      typeof todo === 'object' &&
-      typeof todo.id === 'number' &&
-      typeof todo.text === 'string' &&
-      typeof todo.done === 'boolean'
-    );
-  };
-
   return (
     <>
       <div id="container" className="bg-white dark:bg-[#252525] min-h-screen min-w-full flex justify-center w-full">
