@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: background-color 0.2s ease;
+}
+
+body {
+  font-family: Kanit, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+input {
+  caret-width: 10px;
+}
+
+.button {
+  will-change: filter;
+  transition: filter 300ms;
+  transition: background-color 300ms;
+}
+.button:hover {
+  filter: drop-shadow(0 0 0.2em #646cffaa);
+  background-color: #534CC2;
+}
+
+.edit-button:hover {
+  .edit-icon {
+    stroke: #6C63FF;
+  }
+}
+
+.delete-button:hover {
+  .delete-icon {
+    stroke: #E50000;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #6C63FF25;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6C63FF;
+}
+
+.button, .delete-button {
+  transition: all 0.3s ease;
+}
